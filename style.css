@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+.body{
+    background-color: #264484;;
+}
+
+
+
+
+
+
+
+
+.pixelify-sans{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  
+.gamedesc{
+    background-color:rgb(2, 52, 99);
+    visibility: hidden;
+    opacity: 0% ;
+    transition: 0.8s;
+    width: 1500px;
+    height:500px
+}
+
+.subtitle{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+.description {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.about:hover + .gamedesc{
+   opacity: 100%;
+   visibility: visible;
+   transition: 0.8s;
+}
+
+.about{
+    background-color: rgb(22, 44, 114);
+    width:300px;
+    border-top-right-radius: 20px;
+    font-size: xx-large;
+    font-family: "Pixelify Sans", sans-serif;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    position: sticky;
+
+}
+
+.title {
+    margin-top: -1000px;
+    font-size: 160px;
+    display: flex;
+    justify-content: center;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+
+#game {
+    width: 1280px;
+    height: max-content;
+    margin: auto;
+    overflow: hidden;
+    padding: 750px;
+    ;
+
+}
+.map{
+    width: 1280px;
+    height:720px;
+    padding:auto;
+    border-style: solid;
+    border-color: #19336b;
+    border: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#character{
+    width:50px;
+    height:50px;
+    position:relative;
+    top:550px;
+    left: 50px;
+    overflow: hidden;
+}   
+
+.gobot{
+    width:50px;
+    height:50px;
+
+}
+.animate{
+    animation:jump 0.3s linear;
+}
+
+#block{
+    width:50px;
+    height:40px;
+    position:relative;
+    top: 510px;
+    left:1270px;
+    overflow: hidden;
+    animation:block 2s infinite linear;
+
+
+}
+#playButton{
+    width:100px;
+    height:75px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.saw{
+    width:40px;
+    height:40px;
+
+    
+}
+@keyframes block{
+    0%{left:1270px}
+    100%{left:0px}
+}
+@keyframes jump{
+    0%{top:550px}
+    30%{top:450px}
+    50%{top:400px}
+    70%{top:450px}
+    100%{top:550px}
+}
+
+.cheque {
+    width: max-content;
+    height: max-content;
+    opacity: 1%;
+}
+
